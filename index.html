@@ -3,118 +3,168 @@
 <head>
 	<meta charset="utf-8">
 	<title>CODA website</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://use.fontawesome.com/6f0303e402.js"></script>
 </head>
 <body>
 
 	<main>
+	
+	<!--BARE DE NAVIGATION + LOGO-->
+		
 		<header>
 				<p><span>CODA</span> BY SIMPLON</p>
-				<a href="#">Menu <i class="fa fa-bars" aria-hidden="true"></i>
+				<a href="#">Menu   <i class="fa fa-bars" aria-hidden="true"></i>
 				</a>
 			
 		</header>
+
+	
+	<!-- BANNIERE TITRE PRINCIPALE -->	
+		
+
 		<section class="ban">
 			
 			<h1>CODA fabrique de codeurs</h1>
 
-			<hr />
-			<div class="parahead">
-				<p>Devenez développeur d'applications web et mobile en 6 mois, <br> située à Alès, coda est la formation qu'il vous faut!</p>
+			<hr id="ban_bar" />
 
-				<button type="submit" name="bouton" id="btn_inscr">S'INSCRIRE  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+			<div class="ban_content">
+				<p>DEVENEZ DEVELOPPEUR D'APPLICATION WEB ET MOBILE EN 6 MOIS, <br> SITUEE A ALES, CODA EST LA FORMATION QU'IL VOUS FAUT !</p>
+
+				<button type="submit" name="bouton" class="btn_inscr">S'INSCRIRE  
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</button>
 			</div>
 		</section>
 
-		<section class="imagedumilieu">
-			<div class="bloc1">
-				<div>
+
+		<!-- SECTION DU MILIEU -->
+
+		<section class="content">
+
+			<article class="bloc">
+				
+				<div class="small" id="turquoise">
 					<h2>Aliquam</h2>
 					<hr />
 					<p>IPSUM DOLOR SIT AMET</p>
 				</div>
 
-				<article>
+				<div class="big" id="violet">
 					<h2>Tempus</h2>
 					<hr />
 					<p>FEUGIAT AMET TEMPUS</p>
-				</article>
-			</div>
+				</div>
+
+			</article>
 			
-			<div class="bloc2">
-				<article>
+
+
+
+			<article class="bloc">
+				
+				<div class="big" id="red">
 					<h2>Magna</h2>
 					<hr />
 					<p>IPSUM DOLOR SIT AMET</p>
-				</article>
+				</div>
 
-				<div>
+				<div class="small" id="jaune">
 					<h2>Ipsum</h2>
 					<hr />
 					<p>FEUGIAT AMET TEMPUS</p>
 				</div>
-			</div>
 
-			<div class="bloc3">
-				<div>
+			</article>
+
+
+
+			<article class="bloc">
+
+				<div class="small" id="blue">
 					<h2>Consequat</h2>
 					<hr />
 					<p>IPSUM DOLOR SIT AMET</p>
 				</div>
 
-				<article>
+				<div class="big" id="green">
 					<h2>Atiam</h2>
 					<hr />
 					<p>FEUGIAT AMET TEMPUS</p>
-				</article>
-			</div>
+				</div>
+
+			</article>
 		
 		</section>
 
-		<section>
+
+		<!-- SECTION MASSA LIBERO + BOUTON GET STARTED -->
+
+		<section class="get_started">
+
 			<h2>Massa libero</h2>
+			
 			<hr />
-			<p> ipsum blablabla</p>
-			<button name="inscrire" value="s'inscrire">S'inscrire</button>
+			
+			<p> Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+			magna sed nunc rhoncus pharetra. Pellentesque condimentum sem.<br> In efficitur ligula tate urna.
+			Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
+			Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.<br> 
+			Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+			
+			<button class="btn_getstarted" name="inscrire" value="s'inscrire">S'inscrire</button>
+
 		</section>
 
+
+
+		<!-- SECTION CONTACT-->
+
 		<section class="contact">
-			
-			<form method="post" action="#" class="formulaire">
-				<div class="nomemail">
-					<div class="duoinput">
-						<label>Nom</label>
-						<input name="nom" type="text"/>
-					</div>
-					<div class="duoinput">
-						<label>Email</label>
-						<input name="email" type="text"/>
-					</div>
-				</div>
+			<article>	
+				<form method="post" action="#" class="formulaire">
+					<div class="nomemail">
 
-				<label>Message</label>
-				<textarea name="message" type="text"></textarea>
-				<div class="duobouton">
-					<button name="envoyer" type="submit" id="envoyer">Envoyer</button>
-					<button name="effacer" id="effacer">Effacer</button>
-				</div>
-			</form>
+						<div class="duoinput" id="nominput">
+							<label>NOM</label>
+							<input name="nom" type="text"/>
+						</div>
 
-			<aside> 
+						<div class="duoinput">
+							<label>E-MAIL</label>
+							<input name="email" type="text"/>
+						</div>
+
+					</div>
+
+					<label>MESSAGE</label>
+					<textarea name="message" type="text"></textarea>
+					
+					<div class="duobouton">
+						<button name="envoyer" type="submit" id="envoyer">ENVOYER</button>
+						<button name="effacer" id="effacer">CLEAR</button>
+					</div>
+				</form>
+			</article>
+
+			<aside class="pre_contact"> 
+
 				<div>
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-					<h3>Email</h3>
+					
+					<h3><i class="fa fa-envelope" aria-hidden="true"></i> Email</h3>
 					<a href="#">information@unlited.fr</a> 
 				</div>
+
 				<div>
-					<i class="fa fa-phone" aria-hidden="true"></i>
-					<h3>Téléphone</h3>
+					<h3><i class="fa fa-phone" aria-hidden="true"></i> Phone</h3>
 					<a href="tel:+33405060708">04 05 06 07 08</a>
 				</div>
+
 				<div>
-					<i class="fa fa-home" aria-hidden="true"></i>
-					<h3>Adresse</h3>
+					
+					<h3><i class="fa fa-home" aria-hidden="true"></i>Adresse</h3>
 					<p>6, rue des Erables<br/>
 						Alès</br>
 						France</p>
