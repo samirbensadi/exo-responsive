@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 
@@ -57,7 +58,7 @@ i
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	height: 350px;
+	height: 650px;
 	background-color: rgba(30, 35, 65, 0.5);
 	color: #FFF;
 	padding:100px;
@@ -127,85 +128,217 @@ i
 
 .bloc h2
 {
-	margin-left: 20%;
-	margin-top: 10%;
+	z-index: 3;
 }
+
 .bloc hr
 {
 	height: 2px;
 	width: 25%;
 	background-color: #fff;
-	margin-top: 20px;
-	margin-left: 20%;
-	margin-bottom: 20px;
+	z-index: 3;	
 }
 
 .bloc p
 {
 	font-size: 18px;
-	margin-left: 20%;
+	z-index: 3;	
 }
+
 
 .small
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	width: 30%;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
 	height: 100%;
 }
+
+
 
 
 .big
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
+	align-items: center;
 	width: 70%;
 	height: 100%;		
 }
 
-.big h2
-{
-	margin-left: 20%;
-	margin-top: 5%;
-}
+/***************** vignette turquoise *************/
 
-#turquoise
+.turquoise
 {
-	background-color: rgba(121, 192, 216, 0.5);	
-}
-
-#turquoise::before
-{
+	position: relative;
 	background-image: url(images/pic01.jpg);
 	background-size: cover;
+	z-index: 1;
+}
+
+.turquoise:hover:before
+{
+	opacity: 0;
+}
+
+.turquoise:before
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(121, 192, 216, 0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
 }
 
 
-#violet
+/********************* vignette violette ***************/
+
+.violet
 {
-	background-color: rgba(129, 121, 182, 0.5);
+	position: relative;
+	background-image: url(images/pic02.jpg);
+	background-size: cover;
+	z-index: 1;	
 }
 
-#red
+
+.violet:before
 {
-	background-color: rgba(229, 146, 137,0.5);
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(129, 121, 182, 0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
 }
 
-#jaune
+.violet:hover:before
 {
-	background-color: rgba(223, 182, 144, 0.5);
+	opacity: 0;
 }
 
-#blue
+/********************* vignette red ***************/
+.red
 {
-	background-color: rgba(127, 152, 207, 0.5);
+	position: relative;
+	background-image: url(images/pic03.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+.red:before
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height:100%;
+	background-color: rgba(229, 146, 137,0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
 }
 
-#green
+.red:hover:before
 {
-	background-color: rgba(122, 174, 149, 0.5);
+	opacity: 0;
+}
+
+/********************* vignette jaune ***************/
+
+.jaune
+{
+	position: relative;
+	background-image: url(images/pic04.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+
+.jaune:before
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(223, 182, 144, 0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
+}
+
+.jaune:hover:before
+{
+	opacity: 0;
+}
+
+/********************* vignette blue ***************/
+.blue
+{
+	position: relative;
+	background-image: url(images/pic05.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+
+.blue:before
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(127, 152, 207, 0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
+}
+
+.blue:hover:before
+{
+	opacity: 0;
+}
+
+/********************* vignette green ***************/
+.green
+{
+	position: relative;
+	background-image: url(images/pic06.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+
+.green:before
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(122, 174, 149, 0.7);
+	-moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+	z-index: 2;	
+}
+
+.green:hover:before
+{
+	opacity: 0;
 }
 
 /******************** massa libero ***********************/
@@ -267,31 +400,17 @@ i
 	height: auto;
 }
 
-.contact article
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	width: 50%;
-	height: 100%;
-	padding: 50px;
-}
-
-
 
 .formulaire {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	width:100%;
-	height: 100%;
-	
-	
+	align-items: center;
+	width:50%;
+	height: 100%;	
 }
 
-#envoyer {
+.envoyer {
 	margin: 10px 10px 10px 0;
 	height: 50px;
 	width: 150px;
@@ -301,7 +420,7 @@ i
 	color: #232947; 
 }
 
-#effacer {
+.effacer {
 	background:none;
 	margin:10px;
 	height: 50px;
@@ -313,16 +432,19 @@ i
 .duobouton{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 
 }
 
 .duoinput{
 	display: flex;
 	flex-direction: column;
-	width: 225px;
+	justify-content: space-between;
+	align-items:center;
+	width: 325px;
 }
 
-#nominput
+.nominput
 {
 	margin-right: 30px;
 }
@@ -447,8 +569,4 @@ footer p
 	font-size: 25px;
 
 }
-
-/*end footer*/
-/* couleur bleu clair #2A2F4A*/
-/* couleur des div image #77BFD8 #7D75B3 #E4928A #DFB790 #889ED5 #7AAE95 */
 
